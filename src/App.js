@@ -28,7 +28,7 @@ const Login = Loadable({
 });
 const Logout = Loadable({
   loader: () =>
-    import(/* webpackChunkName: "login" */ './containers/Logout').catch(''),
+    import(/* webpackChunkName: "logout" */ './containers/Logout').catch(''),
   loading: () => '', // full page loader here
   delay: 0, // delay in milliseconds, useful for suspense
 });
