@@ -1,0 +1,35 @@
+.register {
+  margin-top: 100px;
+  margin-left: 80px;
+
+  height: 400px;
+  width: 400px;
+}
+.header {
+  margin-right: 5px;
+  padding-left: 150px;
+  padding-top: 10px;
+  align-items: center;
+  font-size: 40px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+  text-shadow: 3px 3px 5px #777;
+  width: 200px;
+  display: flux;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-size: 200%;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}

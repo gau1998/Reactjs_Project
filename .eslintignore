@@ -1,0 +1,8 @@
+**/build/**
+
+#dependencies
+**/node_modules/**
+
+App.css
+style.scss
+notify.scss

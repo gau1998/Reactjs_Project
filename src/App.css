@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* font-family: jpweb; */
+  font-family: 'Montserrat' !important;
+}
+button,
+a {
+  cursor: pointer;
+}
+ul {
+  list-style-type: none !important;
+  padding: 0px;
+  margin: 0px;
+}
