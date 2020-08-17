@@ -1,8 +1,4 @@
-import {
-  LOGIN,
-  LOGIN_SUCCESS,
-  LOGIN_FAILED,
-} from './constants';
+import { LOGIN, LOGIN_SUCCESS, LOGIN_FAILED } from './constants';
 
 export function login(payload) {
   return {
@@ -24,4 +20,3 @@ export function loginFailed(payload) {
     payload,
   };
 }
-

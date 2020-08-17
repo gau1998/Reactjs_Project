@@ -1,14 +1,7 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
-import {
-  LOGIN
-} from './constants';
-import {
-  loginSuccess,
-  loginFailed,
-} from './actions';
-import {
-  loginRequestApi,
-} from './api';
+import { LOGIN } from './constants';
+import { loginSuccess, loginFailed } from './actions';
+import { loginRequestApi } from './api';
 // worker Saga: will be fired on USER_FETCH_REQUESTED actions
 
 function* requestLogin({ payload }) {
@@ -19,7 +12,6 @@ function* requestLogin({ payload }) {
     yield put(loginFailed(e));
   }
 }
-
 
 function* mySaga() {
   yield takeLatest(LOGIN, requestLogin);

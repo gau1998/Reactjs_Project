@@ -6,13 +6,17 @@ import './App.css';
 
 const Dashboard = Loadable({
   loader: () =>
-    import(/* webpackChunkName: "dashboard" */ './containers/Dashboard').catch(''),
+    import(/* webpackChunkName: "dashboard" */ './containers/Dashboard').catch(
+      '',
+    ),
   loading: () => '', // full page loader here
   delay: 0, // delay in milliseconds, useful for suspense
 });
 const Register = Loadable({
   loader: () =>
-    import(/* webpackChunkName: "register" */ './containers/Register').catch(''),
+    import(/* webpackChunkName: "register" */ './containers/Register').catch(
+      '',
+    ),
   loading: () => '', // full page loader here
   delay: 0, // delay in milliseconds, useful for suspense
 });
@@ -31,13 +35,13 @@ const Logout = Loadable({
 
 function App() {
   return (
-    <div className="App" >
+    <div className="App">
       <Router history={history}>
         <Switch>
           <Route exact path="/" component={Login} />
-          <Route exact path='/register' component={Register}/>
+          <Route exact path="/register" component={Register} />
           <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path='/logout' component={Logout}/>
+          <Route exact path="/logout" component={Logout} />
         </Switch>
       </Router>
     </div>

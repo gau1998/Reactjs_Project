@@ -1,5 +1,5 @@
-import React from "react";
-import "./Style.scss";
+import React from 'react';
+import './Style.scss';
 // import ReactPlayer from "react-player";
 
 function LectureComponent() {
@@ -8,12 +8,12 @@ function LectureComponent() {
       <div>
         <ul className="nav nav-tabs video-tabs">
           <li>
-            <a data-toggle="tab" href="#watch" id='#abcd' aria-expanded="true">
+            <a data-toggle="tab" href="#watch" id="#abcd" aria-expanded="true">
               Watch on YouTube
             </a>
           </li>
           <li>
-            <a data-toggle="tab"  href="#watch">
+            <a data-toggle="tab" href="#watch">
               Video
             </a>
           </li>
@@ -35,16 +35,15 @@ function LectureComponent() {
         </ul>
       </div>
       <div>
-      {/*<ReactPlayer
+        {/*<ReactPlayer
       id='#abcd'
         width="650px"
         height="400px"
         controls
         url="https://www.youtube.com/watch?v=UF3QPLL_4ts"
       />*/}
-      
-  </div>
-  </div>
+      </div>
+    </div>
   );
 }
 

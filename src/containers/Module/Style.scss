@@ -1,41 +1,36 @@
-
-*{
+* {
   margin: 0px;
   padding: 0px;
-
 }
-.bgimage{
+.bgimage {
   width: 20px;
   height: 20px;
   margin-top: 50px;
-  
 }
-.nav nav-tabs{
+.nav nav-tabs {
   width: 300px;
 }
-.paragraph{
+.paragraph {
   font-size: 40px;
   text-decoration: none;
 }
-.dog{
+.dog {
   background-color: white;
 }
-.left{
+.left {
   margin-right: 300px;
 }
-.xyz{
+.xyz {
   font-size: 20px;
   color: darken($color: #000000, $amount: 0);
-  
 }
 .course {
   padding-top: 20px;
   margin-right: 178px;
   text-decoration: none;
   font-size: 50px;
-  
 }
-.tinku{
+.tinku {
   border: 2px solid;
   height: 45px;
   width: 250px;
@@ -47,20 +42,19 @@
   margin-right: 150px;
   text-decoration: none;
 }
-.leftside{
+.leftside {
   width: 100px;
   border: none;
   text-decoration: none;
   outline-style: none;
 }
 
-
-.notes{
-margin-top: 30px;
-margin-right: 120px;
-text-decoration: none;
+.notes {
+  margin-top: 30px;
+  margin-right: 120px;
+  text-decoration: none;
 }
-.resources{
+.resources {
   margin-top: 30px;
   margin-right: 200px;
   text-decoration: none;

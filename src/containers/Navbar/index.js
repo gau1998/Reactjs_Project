@@ -1,11 +1,11 @@
-import React from "react";
-import "../Navbar/Style.scss";
-import { Link, Redirect } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
-import { GoChevronDown } from "react-icons/go";
-import { IoMdNotificationsOutline } from "react-icons/io";
-import { RiMore2Line } from "react-icons/ri";
-import { TiUser } from "react-icons/ti";
+import React from 'react';
+import '../Navbar/Style.scss';
+import { Link, Redirect } from 'react-router-dom';
+import { FaSearch } from 'react-icons/fa';
+import { GoChevronDown } from 'react-icons/go';
+import { IoMdNotificationsOutline } from 'react-icons/io';
+import { RiMore2Line } from 'react-icons/ri';
+import { TiUser } from 'react-icons/ti';
 
 function Navbar(props) {
   return (
@@ -23,8 +23,7 @@ function Navbar(props) {
           data-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
 
@@ -36,8 +35,7 @@ function Navbar(props) {
             role="button"
             data-toggle="dropdown"
             aria-haspopup="true"
-            aria-expanded="false"
-          >
+            aria-expanded="false">
             <button className=" abcd">
               Explore <GoChevronDown />
             </button>
@@ -45,8 +43,7 @@ function Navbar(props) {
 
           <div
             class="dropdown-menu singh"
-            aria-labelledby="navbarDropdownMenuLink"
-          >
+            aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">
               Action
             </a>
@@ -68,7 +65,7 @@ function Navbar(props) {
 
         <div>
           <a href="">
-            {" "}
+            {' '}
             <FaSearch className="icon" color="blue" size="20px" />
           </a>
         </div>
@@ -85,17 +82,15 @@ function Navbar(props) {
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
-              aria-expanded="false"
-            >
+              aria-expanded="false">
               <button className=" abcde">
                 <TiUser size="40px" />
-                Gautam Narayan <GoChevronDown />
+                Test User <GoChevronDown />
               </button>
             </a>
             <div
               class="dropdown-menu singh"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
+              aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">
                 Action
               </a>

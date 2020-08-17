@@ -1,6 +1,6 @@
-import React from "react";
-import './Header.css'
-import{AiOutlineRight} from 'react-icons/ai'
+import React from 'react';
+import './Header.css';
+import { AiOutlineRight } from 'react-icons/ai';
 
 function Header() {
   return (
@@ -9,25 +9,25 @@ function Header() {
         <li className="nav-item">
           <a className="nav-link " href="#">
             Courses
-            <AiOutlineRight  size='25px' color='silver'/>
+            <AiOutlineRight size="25px" color="silver" />
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">
             Physics
-            <AiOutlineRight  size='25px' color='silver'/>
+            <AiOutlineRight size="25px" color="silver" />
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">
             NOC Optical Sensors(video)
-            <AiOutlineRight  size='25px' color='silver'/>
+            <AiOutlineRight size="25px" color="silver" />
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">
             Syllabus
-            <AiOutlineRight  size='25px' color='silver'/>
+            <AiOutlineRight size="25px" color="silver" />
           </a>
         </li>
         <li className="nav-item">
@@ -35,7 +35,6 @@ function Header() {
             Co-ordinated:Prespicto
           </a>
         </li>
-       
       </ul>
     </div>
   );
