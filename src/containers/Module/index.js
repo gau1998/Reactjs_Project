@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import MuiAccordion from '@material-ui/core/Accordion';
 import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
@@ -47,12 +47,27 @@ const AccordionDetails = withStyles((theme) => ({
   },
 }))(MuiAccordionDetails);
 
-const ModuleComponent = () => {
-  const [expanded, setExpanded] = React.useState('panel1');
-
+const ModuleComponent = (props) => {
+  const [expanded, setExpanded] = useState('');
+  const [selectedLecture, updateLecture] = useState('')
+  const{tutorialDetail, getLectures} = props
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
+
+  useEffect(()=>{
+    setExpanded(tutorialDetail && tutorialDetail.module &&  tutorialDetail.module[0] &&  tutorialDetail.module[0].moduleTitle)
+    updateLecture(tutorialDetail[0] && 
+      tutorialDetail[0].lectures &&  tutorialDetail[0].lectures[0] && tutorialDetail[0].lectures[0]._id)
+    getLectures({lectureId:tutorialDetail[0] && 
+      tutorialDetail[0].lectures &&  tutorialDetail[0].lectures[0] && tutorialDetail[0].lectures[0]._id})
+  },[])
+
+  const changeLecture=({lectureId})=>{
+    getLectures({lectureId, tabChange:true})
+    updateLecture(lectureId)
+  }
+
 
   return (
     <div>
@@ -60,39 +75,20 @@ const ModuleComponent = () => {
         <img className="dwrapper" src={bg} alt="bg image" />
       </div>
       <div className="wrapper">
-        <Accordion
-          square
-          expanded={expanded === 'panel1'}
-          onChange={handleChange('panel1')}>
-          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-            <Typography>unit #1</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>abcd</Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          square
-          expanded={expanded === 'panel2'}
-          onChange={handleChange('panel2')}>
-          <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-            <Typography>Item #2</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>Lorem ipsum dolor</Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          square
-          expanded={expanded === 'panel3'}
-          onChange={handleChange('panel3')}>
-          <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-            <Typography> Item #3</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>Lorem ipsum dolor</Typography>
-          </AccordionDetails>
-        </Accordion>
+        {tutorialDetail && tutorialDetail.map(tutorial=>(
+          <Accordion
+            square
+            expanded={expanded === tutorial.module.moduleTitle}
+            onChange={handleChange(tutorial.module.moduleTitle)}>
+            <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+              <Typography>{tutorial.module.moduleTitle}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div className="lectureName" >
+              {tutorial.lectures && tutorial.lectures.map(lecture=>(<Typography onClick={()=>changeLecture({lectureId:lecture._id})}>{lecture.title}</Typography>))}
+              </div>
+            </AccordionDetails>
+          </Accordion>))}
       </div>
     </div>
   );

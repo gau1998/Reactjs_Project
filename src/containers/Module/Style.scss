@@ -59,3 +59,28 @@
   margin-right: 200px;
   text-decoration: none;
 }
+.lectureName{
+  flex-wrap: wrap;
+  padding: 0px 0px 12px;
+
+}
+.sidebarWrapper{
+  width: 280px;
+  background-color: #f0f0f0;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  top: 65px;
+  padding: 20px 0 0;
+  z-index: 1;
+  border-right: 1px solid rgba(0,0,0,.125);
+}
+
+.selectedTab{
+  border-left: 8px solid #2775d1;
+  flex-wrap: wrap;
+}
+

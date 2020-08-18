@@ -40,7 +40,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Login} />
           <Route exact path="/register" component={Register} />
-          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/dashboard/:id?" component={Dashboard} />
           <Route exact path="/logout" component={Logout} />
         </Switch>
       </Router>

@@ -6,6 +6,7 @@
   background-color: rgb(243, 243, 243);
   width: 200px;
   margin-right: 100px;
+  padding-right: 0px !important;
 }
 .wrapper {
   margin-top: 20px;
@@ -15,4 +16,8 @@
   height: 80px;
   width: 80px;
   margin-top: 50px;
+}
+.main-content{
+  margin-left: 22%;
+  width: 77%;
 }
