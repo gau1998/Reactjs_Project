@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Register/Style.scss';
+import '../Register/style.scss';
 import bg from '../../image/bg.svg';
 
 const Register = () => {

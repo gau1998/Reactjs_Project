@@ -1,8 +1,8 @@
-import { storageService } from './utils/StorageService';
+
 const API_VERSION = '/api/v1';
-var BASE_URL = 'https://cp.perspectico.com';
+var BASE_URL = 'https://dev.perspectico.com';
 if (process.env.NODE_ENV === 'development') {
-  BASE_URL = 'http://localhost:3000';
+  BASE_URL = 'https://dev.perspectico.com/';
 } else {
   BASE_URL = process.env.REACT_APP_BASE_URL || 'https://cp.perspectico.com';
 }

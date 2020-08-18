@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import {func} from 'prop-types';
 import { Link } from 'react-router-dom';
 import Loadable from 'react-loadable';
-import './Style.scss';
+import './style.scss';
 import {getCourseDetails, getTutorialDetails, getSources} from '../../actions'
 const ModuleComponent = Loadable({
   loader: () => import(/* webpackChunkName: "module" */ '../Module').catch(''),
@@ -15,11 +15,11 @@ const Navbar = Loadable({
   loading: () => '', // full page loader here
   delay: 0, // delay in milliseconds, useful for suspense
 });
-const Header = Loadable({
-  loader: () => import(/* webpackChunkName: "header" */ '../Header').catch(''),
-  loading: () => '', // full page loader here
-  delay: 0, // delay in milliseconds, useful for suspense
-});
+// const Header = Loadable({
+//   loader: () => import(/* webpackChunkName: "header" */ '../Header').catch(''),
+//   loading: () => '', // full page loader here
+//   delay: 0, // delay in milliseconds, useful for suspense
+// });
 const LectureComponent = Loadable({
   loader: () =>
     import(/* webpackChunkName: "lecture" */ '../Lectures').catch(''),
@@ -67,8 +67,8 @@ const Dashboard =(props)=>{
     <div>
     <div>
       <Navbar {...props}/>
-      <hr />
-      <div className="row left ">
+      
+      <div className="row ">
         <div className="leftside col-3" >
           {tutorialDetail && tutorialDetail.length? <ModuleComponent {...props} getLectures={getLectures}/>:""}
         </div>

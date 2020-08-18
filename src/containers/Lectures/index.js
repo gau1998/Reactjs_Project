@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './Style.scss';
+import './style.scss';
 // import ReactPlayer from "react-player";
 
 function LectureComponent(props) {

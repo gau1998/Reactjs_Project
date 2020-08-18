@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import './style.scss';
 import { AiOutlineRight } from 'react-icons/ai';
 
 function Header() {
