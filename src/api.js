@@ -1,8 +1,10 @@
 
 const API_VERSION = '/api/v1';
-var BASE_URL = 'https://dev.perspectico.com';
+
+
+var BASE_URL = 'http://dev.perspectico.com/';
 if (process.env.NODE_ENV === 'development') {
-  BASE_URL = 'https://dev.perspectico.com/';
+  BASE_URL = 'http://dev.perspectico.com/';
 } else {
   BASE_URL = process.env.REACT_APP_BASE_URL || 'https://cp.perspectico.com';
 }
