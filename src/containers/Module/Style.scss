@@ -7,63 +7,14 @@
   height: 20px;
   margin-top: 50px;
 }
-.nav nav-tabs {
-  width: 300px;
-}
-.paragraph {
-  font-size: 40px;
-  text-decoration: none;
-}
-.dog {
-  background-color: white;
-}
-.left {
-  margin-right: 300px;
-}
-.xyz {
-  font-size: 20px;
-  color: darken($color: #000000, $amount: 0);
-}
-.course {
-  padding-top: 20px;
-  margin-right: 178px;
-  text-decoration: none;
-  font-size: 50px;
-}
-.tinku {
-  border: 2px solid;
-  height: 45px;
-  width: 250px;
-  background-color: silver;
-  color: whitesmoke;
-}
-.preview {
-  margin-top: 30px;
-  margin-right: 150px;
-  text-decoration: none;
-}
-.leftside {
-  width: 100px;
-  border: none;
-  text-decoration: none;
-  outline-style: none;
+
+.haha{
+  height: 610px;
+  overflow: hidden;
+  overflow-y: scroll;
+  
 }
 
-.notes {
-  margin-top: 30px;
-  margin-right: 120px;
-  text-decoration: none;
-}
-.resources {
-  margin-top: 30px;
-  margin-right: 200px;
-  text-decoration: none;
-}
-.lectureName{
-  flex-wrap: wrap;
-  padding: 0px 0px 12px;
-
-}
 .sidebarWrapper{
   width: 280px;
   background-color: #f0f0f0;
@@ -83,4 +34,13 @@
   border-left: 8px solid #2775d1;
   flex-wrap: wrap;
 }
+.lectureName{
+  font-size: 20px;
+  list-style-type: disc;
+}
+.typograph:hover{
+  background-color: whitesmoke;
+  
+}
+
 

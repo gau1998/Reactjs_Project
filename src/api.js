@@ -18,6 +18,7 @@ const getHeaders = () => {
   // if (authToken) {
   //   headers.authorization = `Bearer ${authToken}`;
   // }
+  console.log(process.env)
   const authToken = process.env.REACT_APP_TOKEN;
   headers.authorization = `Bearer ${authToken}`;
   return headers;
