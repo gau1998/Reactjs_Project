@@ -47,7 +47,8 @@ const AccordionSummary = withStyles({
 const AccordionDetails = withStyles((theme) => ({
   root: {
     backgroundColor: 'rgb(243, 243, 243)',
-    padding: theme.spacing(2.5),
+    padding: theme.spacing(0.5),
+    paddingLeft: '60px',
   },
 
   content: {
@@ -109,16 +110,15 @@ const ModuleComponent = (props) => {
                 <Typography>{tutorial.module.moduleTitle}</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <div >
+                <div>
                   {tutorial.lectures &&
                     tutorial.lectures.map((lecture) => (
                       <Typography
                         style={{
                           display: 'flex',
                           justifyContent: 'space-between',
-                          marginTop: '10px',
+                          marginTop: '15px',
                           opacity: '0.5',
-                          
                         }}
                         onClick={() =>
                           changeLecture({ lectureId: lecture._id })

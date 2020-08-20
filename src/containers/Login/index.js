@@ -39,29 +39,28 @@ const Login =()=> {
 
                 <div className="input-div pass">
                   <div className="i">
-                    <i className="fas fa-user" />
+                    <i className="fas fa fa-user" />
                   </div>
                   <div className="form-group">
                     <input
                       type="text"
                       name="email"
                       className="form-control"
-                      value={this.state.email}
-                      placeholder="username"
+                      placeholder="email"
                       onChange={handleInputChange}
                     />
                   </div>
                 </div>
                 <div className="input-div pass">
                   <div className="i">
-                    <i className="fas fa-lock" />
+                    <i className="fas fa fa-lock" />
                   </div>
                   <div className="form-group">
                     <input
                       type="password"
                       name="password"
                       className="form-control"
-                      value={this.state.password}
+                      
                       placeholder="Password"
                       onChange={handleInputChange}
                     />
